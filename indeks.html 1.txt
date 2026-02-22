@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK FURNITURE – Wyjątkowe Meble</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        .card-shadow { box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; }
+        .card-shadow:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.1); transform: translateY(-5px); }
+        .section-title { border-l-8 border-amber-700 pl-4 uppercase font-black text-3xl mb-12; }
+        .equal-height-card { display: flex; flex-direction: column; height: 100%; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 py-4 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-widest text-gray-800 uppercase">DK <span class="text-amber-700">Furniture</span></div>
+            <div class="hidden md:flex gap-8 font-bold text-sm uppercase">
+                <a href="#kategoria-l" class="hover:text-amber-700 transition">Narożniki L</a>
+                <a href="#kategoria-u" class="hover:text-amber-700 transition">Narożniki U</a>
+                <a href="#kategoria-kanapy" class="hover:text-amber-700 transition">Kanapy</a>
+            </div>
+            <a href="tel:+48725312517" class="bg-gray-900 text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-amber-700 transition">ZADZWOŃ: 725312517</a>
+        </div>
+    </nav>
+
+    <header class="py-16 bg-slate-900 text-white text-center">
+        <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase italic">Kolekcja 2026</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto px-4 uppercase text-xs tracking-widest mb-8">Producent mebli tapicerowanych klasy Premium</p>
+        
+        <div class="inline-block bg-amber-700 text-white px-8 py-3 rounded-full font-bold text-sm md:text-base uppercase tracking-wider animate-pulse">
+            ✨ Każdy nasz mebel posiada funkcję rozkładania do spania ✨
+        </div>
+    </header>
+
+    <section id="kategoria-l" class="max-w-7xl mx-auto py-16 px-6 border-b">
+        <h2 class="section-title">Narożniki Typu L</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="lotus.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">LOTUS</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Wymiar:</b> 270x200 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładany do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black">2.600 zł</span>
+                        <button onclick="zamow('Narożnik LOTUS', '2600')" class="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-700 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="new.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">NEW</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Wymiar:</b> 270x200 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładany do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black">3.000 zł</span>
+                        <button onclick="zamow('Narożnik NEW', '3000')" class="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-700 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="newada L.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">NEWADA</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Wymiar:</b> 270x200 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładany do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black">2.600 zł</span>
+                        <button onclick="zamow('Narożnik NEWADA L', '2600')" class="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-700 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="chesterfield.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">CHESTERFIELD L</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Wymiar:</b> 270x200 cm</li>
+                        <li>🌙 <b>Spanie:</b> Funkcja rozkładania</li>
+                        <li>💎 <b>Opcje:</b> Fotel Uszak 800zł Pufa 280zł</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black">4.700 zł</span>
+                        <button onclick="zamow('Narożnik CHESTERFIELD L', '4700')" class="bg-amber-700 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-800 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="ColinL.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">COLIN L</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Wymiar:</b> 270x200 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładany do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black">3.500 zł</span>
+                        <button onclick="zamow('Narożnik COLIN L', '3500')" class="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-700 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="London.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">LONDON L</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Wymiar:</b> 270x200 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładany do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black">2.700 zł</span>
+                        <button onclick="zamow('Narożnik LONDON L', '2700')" class="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-700 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kategoria-u" class="max-w-7xl mx-auto py-16 px-6 border-b">
+        <h2 class="section-title">Narożniki Typu U</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                 <img src="Colin.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase text-amber-700 italic">U COLIN BĄBELEK</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Wymiary:</b> 200 x 340 x 200 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładany do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-3xl font-black">4.600 zł</span>
+                        <button onclick="zamow('Narożnik U COLIN', '4600')" class="bg-amber-700 text-white px-8 py-4 rounded-xl font-bold hover:bg-amber-800 transition uppercase text-xs">Zamów</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="Newada.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">U NEWADA</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Wymiary:</b> 200 x 340 x 200 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładany do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-3xl font-black">3.800 zł</span>
+                        <button onclick="zamow('Narożnik U NEWADA', '3800')" class="bg-gray-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-amber-700 transition uppercase text-xs">Zamów</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kategoria-kanapy" class="max-w-7xl mx-auto py-16 px-6">
+        <h2 class="section-title">Stylowe Kanapy</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+               <img src="kanapa Floryda.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">KANAPA FLORYDA</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Długość:</b> 250 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładana do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black text-amber-700">2.900 zł</span>
+                        <button onclick="zamow('Kanapa FLORYDA', '2900')" class="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-700 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="Colin..jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">KANAPA COLIN</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Długość:</b> 250 cm</li>
+                        <li>🌙 <b>Funkcja:</b> Rozkładana do spania</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black text-amber-700">3.300 zł</span>
+                        <button onclick="zamow('Kanapa COLIN', '3300')" class="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-700 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-gray-100 equal-height-card">
+                <img src="kanapa Colin.jpg" class="h-64 w-full object-cover">
+                <div class="p-8 flex flex-col flex-1">
+                    <h3 class="text-2xl font-bold mb-4 uppercase italic">CHESTERFIELD SLEEP</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6 text-sm flex-1">
+                        <li>📏 <b>Funkcja:</b> Rozkładana do spania</li>
+                        <li>💎 <b>Wykończenie:</b> Głębokie pikowanie</li>
+                    </ul>
+                    <div class="pt-6 border-t flex items-center justify-between">
+                        <span class="text-2xl font-black text-amber-700">3.600 zł</span>
+                        <button onclick="zamow('Kanapa CHESTERFIELD SLEEP', '3600')" class="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold hover:bg-amber-700 transition text-xs uppercase">Zamów</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 text-center uppercase tracking-widest text-xs">
+        <div class="text-2xl font-black mb-2 text-amber-700">DK FURNITURE</div>
+        <p class="text-gray-500">Dostawa cała Polska | Każdy mebel z funkcją spania</p>
+    </footer>
+
+    <script>
+        function zamow(model, cena) {
+            const telefon = "48725312517";
+            const tekst = `Dzień dobry! Interesuje mnie:\nMEBEL: ${model}\nCENA: ${cena} zł\n\nProszę o kontakt.`;
+            window.open(`https://wa.me/${telefon}?text=${encodeURIComponent(tekst)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
