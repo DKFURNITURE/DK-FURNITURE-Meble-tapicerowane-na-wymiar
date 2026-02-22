@@ -1,3 +1,6 @@
+<head>
+<title>Dominik Cichosz - DK FURNITURE- MEBLE TAPICEROWANE NA WYMIAR</title>
+</head>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -232,4 +235,5 @@
         }
     </script>
 </body>
+
 </html>
